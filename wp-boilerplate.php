@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * Plugin Name:     Plugin Name
+ * Plugin Name:     Boilerplate
  * Plugin URI:      @TODO
  * Description:     @TODO
  * Version:         1.0.0
@@ -14,7 +14,8 @@
  * Requires PHP:    7.0
  */
 
-use MyPackage\WP\Plugin\Plugin;
+
+use BoilerPlate\WP\Plugin\Plugin;
 
 require_once __DIR__ . '/Plugin.php';
 

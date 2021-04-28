@@ -1,5 +1,5 @@
 {
-  "name": "vendor-name/package-name",
+  "name": "boilerplate/wp-plg-boilerplate",
   "type": "wordpress-plugin",
   "description": "",
   "homepage": "http://some-url.com",
@@ -12,7 +12,7 @@
     "wikimedia/composer-merge-plugin": "^2.0"
   },
   "extra": {
-    "installer-name" : "plugin-name",
+    "installer-name" : "wp-boilerplate",
     "merge-plugin": {
       "include": [
         "vendor/myshoppress/core/composer.ext.json",
@@ -27,7 +27,7 @@
   },
   "autoload": {
     "psr-4": {
-      "MyPackage\\WP\\Plugin\\" : "./src"
+      "BoilerPlate\\WP\\Plugin\\" : "./src"
     }
   },
   "minimum-stability": "dev",

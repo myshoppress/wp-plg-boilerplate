@@ -1,6 +1,6 @@
 <?php
 
-namespace MyPackage\WP\Plugin;
+namespace BoilerPlate\WP\Plugin;
 
 use MyShoppress\WP\Core\Extension\Context;
 use MyShoppress\WP\Core\Extension\PluginExtension;
