@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+[[ -d ${1:-} ]] && {
+  ABS_PATH=$(cd $1 && echo `pwd`)
+  lazygit -p $ABS_PATH
+  exit 0
+}
+cd $(dirname $0)
+for dir in */; do
+  [[ ! -d $dir/.git ]] && continue;
+  echo "----------------------------------------------------------------------------------------------------"
+  echo "Checking Status $dir"
+  pushd $dir &> /dev/null
+  git status -s -b --show-stash
+  popd &> /dev/null
+done;
+echo "----------------------------------------------------------------------------------------------------"

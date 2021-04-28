@@ -1,0 +1,38 @@
+{
+  "name": "vendor-name/package-name",
+  "type": "wordpress-plugin",
+  "description": "",
+  "homepage": "http://some-url.com",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+
+  ],
+  "require": {
+    "php": ">=7.4",
+    "wikimedia/composer-merge-plugin": "^2.0"
+  },
+  "extra": {
+    "installer-name" : "plugin-name",
+    "merge-plugin": {
+      "include": [
+        "vendor/myshoppress/core/composer.ext.json",
+        "composer.local.json"
+      ],
+      "recurse": true,
+      "replace": false,
+      "ignore-duplicates": false,
+      "merge-dev": true,
+      "merge-scripts": true
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "MyPackage\\WP\\Plugin\\" : "./src"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+
+  }
+}
