@@ -6,7 +6,7 @@
   exit 0
 }
 cd $(dirname $0)
-for dir in */; do
+for dir in projects/*; do
   [[ ! -d $dir/.git ]] && continue;
   echo "----------------------------------------------------------------------------------------------------"
   echo "Checking Status $dir"
